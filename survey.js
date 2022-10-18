@@ -32,7 +32,7 @@ const qList = (i) => {
   if(i < questions.length) {
     rl.question(questions[i], (answer) => {
       answers += '\n' + answer;
-      qList(i+1); // recusive function to go through question list
+      qList(i+1); // recursive function to go through question list
     });
   } else {
     console.log(`Thank you for your valuable feedback: ${answers}`);
